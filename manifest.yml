@@ -1,0 +1,23 @@
+version: '1.0'
+history:
+  '1.0':
+    date: '2019-02-05'
+    description: 'Manifest created.'
+plugin: {  }
+sys:
+  -
+    name: mercury
+    version:
+      - '1.0'
+php:
+  - '7.2'
+author: null
+links:
+  Github: 'https://github.com'
+description: ''
+third_part_software:
+  -
+    name: null
+    description: null
+    path:
+      - /path/to/files

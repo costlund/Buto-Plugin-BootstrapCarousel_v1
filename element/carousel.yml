@@ -1,0 +1,97 @@
+-
+  type: div 
+  attribute:
+    id: rs:id
+    class: carousel slide
+    data-ride: carousel
+  innerHTML:
+    -
+      type: ol
+      attribute:
+        class: carousel-indicators
+      innerHTML:
+        -
+          type: li
+          attribute:
+            data-target: rs:hash_id
+            data-slide-to: 0 
+            class: active
+        -
+          type: li 
+          attribute:
+            data-target: rs:hash_id 
+            data-slide-to: 1
+    -
+      type: div
+      attribute:
+        class: carousel-inner
+      innerHTML: 
+        -
+          type: div
+          attribute:
+            class: carousel-item active
+          innerHTML: First slide
+        -
+          type: div
+          attribute:
+            class: carousel-item
+          innerHTML: Second slide
+    -
+      type: a
+      attribute:
+        class: carousel-control-prev 
+        href: rs:hash_id
+        role: button 
+        data-slide: prev
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: carousel-control-prev-icon 
+            aria-hidden: true
+        -
+          type: span
+          attribute:
+            class: sr-only
+          innerHTML: Previous
+    -
+      type: a 
+      attribute:
+        class: carousel-control-next 
+        href: rs:hash_id
+        role: button 
+        data-slide: next
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: carousel-control-next-icon 
+            aria-hidden: true
+        -
+          type: span
+          attribute:
+            class: sr-only
+          innerHTML: Next
+  
+-
+  type: style
+  innerHTML: |
+    .carousel{
+      background:silver;
+      min-height: 300px;
+    }
+    .carousel-item{
+      background:gray;
+      min-heightzzz: 300px;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
