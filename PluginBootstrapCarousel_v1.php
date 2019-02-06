@@ -1,10 +1,5 @@
 <?php
 class PluginBootstrapCarousel_v1{
-  function __construct() {
-  }
-  public function page_xxx(){
-    
-  }
   public function widget_carousel($data){
     $data = new PluginWfArray($data);
     if(!$data->get('data/id')){
@@ -13,6 +8,12 @@ class PluginBootstrapCarousel_v1{
     $data->set('data/hash_id', '#'.$data->get('data/id').'');
     $element = new PluginWfYml(__DIR__.'/element/carousel.yml');
     $element->setByTag($data->get('data'));
+    /**
+     * Fade.
+     */
+    if($data->get('data/fade')){
+      $element->set('0/attribute/class', 'carousel slide carousel-fade');
+    }
     /**
      * Items.
      */

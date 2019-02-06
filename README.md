@@ -2,7 +2,9 @@
 
 Made for Bootstrap 4.
 
-Param controls, indicators, style is optional. Param id and item are not.
+https://getbootstrap.com/docs/4.1/components/carousel/
+
+Param controls, indicators, fade, style is optional. Param id and item are not.
 
 ```
 type: widget
@@ -11,16 +13,9 @@ data:
   method: carousel
   data:
     id: my_carousel
-    controls: false
-    indicators: false
-    style: |
-      .carousel{
-        background:blue;
-        min-height: 300px;
-      }
-      .carousel-item{
-        background:green;
-      }
+    controls: true
+    indicators: true
+    fade: false
     item:
       -
         type: p
@@ -28,6 +23,12 @@ data:
       -
         type: p
         innerHTML: P2
+    style: |
+      .carousel{
+        min-height: 300px;
+      }
+      .carousel-item{
+      }
 ```
 
 Item example.
