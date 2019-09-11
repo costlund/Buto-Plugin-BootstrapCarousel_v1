@@ -1,0 +1,42 @@
+-
+  type: widget
+  data:
+    plugin: 'theme/include'
+    method: include
+-
+  type: h1
+  innerHTML: Demo
+-
+  type: widget
+  data:
+    plugin: bootstrap/carousel_v1
+    method: carousel
+    data:
+      id: my_carousel
+      controls: true
+      indicators: true
+      fade: true
+      item:
+        -
+          type: div
+          attribute:
+            style: 'background:blue;min-height:300px;'
+          innerHTML:
+            -
+              type: h1
+              innerHTML: Div 1
+        -
+          type: div
+          attribute:
+            style: 'background:green;min-height:300px;'
+          innerHTML:
+            -
+              type: h1
+              innerHTML: Div 2
+      style: |
+        .carousel{
+          min-height: 300px;
+          background: silver;
+        }
+        .carousel-item{
+        }

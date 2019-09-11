@@ -70,4 +70,11 @@ class PluginBootstrapCarousel_v1{
     //wfHelp::yml_dump($element);
     wfDocument::renderElement($element->get());
   }
+  public function page_demo(){
+    wfPlugin::includeonce('wf/yml');
+    wfPlugin::enable('theme/include');
+    wfPlugin::enable('bootstrap/carousel_v1');
+    $element = new PluginWfYml(__DIR__.'/page/demo.yml');
+    wfDocument::renderElement($element->get());
+  }
 }

@@ -15,17 +15,28 @@ data:
     id: my_carousel
     controls: true
     indicators: true
-    fade: false
+    fade: true
     item:
       -
-        type: p
-        innerHTML: P1
+        type: div
+        attribute:
+          style: 'background:blue;min-height:300px;'
+        innerHTML:
+          -
+            type: h1
+            innerHTML: Div 1
       -
-        type: p
-        innerHTML: P2
+        type: div
+        attribute:
+          style: 'background:green;min-height:300px;'
+        innerHTML:
+          -
+            type: h1
+            innerHTML: Div 2
     style: |
       .carousel{
         min-height: 300px;
+        background: silver;
       }
       .carousel-item{
       }
