@@ -84,14 +84,7 @@
       background:gray;
       min-heightzzz: 300px;
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+-
+  type: script
+  innerHTML: $('.carousel').carousel()
   
