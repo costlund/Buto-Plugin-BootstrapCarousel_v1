@@ -25,7 +25,7 @@ class PluginBootstrapCarousel_v1{
     foreach ($data->get('data/item') as $key => $value) {
       $carousel_item->set('innerHTML', array($value));
       $items[] = $carousel_item->get();
-      if(strstr($carousel_item->get('attribute/class'), ' active')){
+      if(wfPhpfunc::strstr($carousel_item->get('attribute/class'), ' active')){
         $carousel_item->set('attribute/class', 'carousel-item');
       }
     }
