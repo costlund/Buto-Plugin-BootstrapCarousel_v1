@@ -3,7 +3,7 @@
   attribute:
     id: rs:id
     class: carousel slide
-    data-ride: carousel
+    data-bs-ride: carousel
   innerHTML:
     -
       type: ol
@@ -13,14 +13,14 @@
         -
           type: li
           attribute:
-            data-target: rs:hash_id
-            data-slide-to: 0 
+            data-bs-target: rs:hash_id
+            data-bs-slide-to: 0 
             class: active
         -
           type: li 
           attribute:
-            data-target: rs:hash_id 
-            data-slide-to: 1
+            data-bs-target: rs:hash_id 
+            data-bs-slide-to: 1
     -
       type: div
       attribute:
@@ -86,5 +86,5 @@
     }
 -
   type: script
-  innerHTML: $('.carousel').carousel()
+  innerHTML: "$( document ).ready(function() {$('.carousel').carousel();})"
   

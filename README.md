@@ -1,6 +1,7 @@
 # Buto-Plugin-BootstrapCarousel_v1
 
-Made for Bootstrap 4.
+Made for Bootstrap 5 since september 2023.
+
 
 https://getbootstrap.com/docs/4.1/components/carousel/
 

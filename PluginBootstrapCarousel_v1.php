@@ -36,7 +36,7 @@ class PluginBootstrapCarousel_v1{
     $carousel_indicators = new PluginWfArray($element->get('0/innerHTML/0/innerHTML/0'));
     $items = array();
     foreach ($data->get('data/item') as $key => $value) {
-      $carousel_indicators->set('attribute/data-slide-to', $key);
+      $carousel_indicators->set('attribute/data-bs-slide-to', $key);
       $items[] = $carousel_indicators->get();
       if($carousel_indicators->get('attribute/class')=='active'){
         $carousel_indicators->set('attribute/class', null);
