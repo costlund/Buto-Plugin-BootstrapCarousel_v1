@@ -1,12 +1,11 @@
 # Buto-Plugin-BootstrapCarousel_v1
 
 Made for Bootstrap 5 since september 2023.
+- https://getbootstrap.com/docs/5.0/components/carousel/
 
 
-https://getbootstrap.com/docs/4.1/components/carousel/
-
+## Widget carousel
 Param controls, indicators, fade, style is optional. Param id and item are not.
-
 ```
 type: widget
 data:
@@ -43,8 +42,7 @@ data:
       }
 ```
 
-Item example.
-
+### Item example
 ```
 type: div
 innerHTML:
