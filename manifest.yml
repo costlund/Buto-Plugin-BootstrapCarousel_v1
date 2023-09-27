@@ -1,8 +1,12 @@
-version: 1.5.1
+version: 1.5.2
 history:
+  1.5.2:
+    date: '2023-09-27'
+    title: Versions
+    description: 'Versions update.'
   1.5.1:
     date: '2023-09-26'
-    title: 'Readme'
+    title: Readme
     description: 'Readme improvements.'
   1.5.0:
     date: '2023-09-26'
@@ -76,13 +80,13 @@ history:
 plugin:
   -
     name: wf/array
-    version: 1.5.0
+    version: 1.5.1
   -
     name: wf/yml
-    version: 1.8.0
+    version: 1.8.1
   -
     name: theme/include
-    version: 1.20.4
+    version: 1.21.0
 sys:
   -
     name: mercury
