@@ -28,7 +28,22 @@ class PluginBootstrapCarousel_v1{
      */
     foreach($data->get('data/item') as $k => $v){
       $i = new PluginWfArray($v);
-      if($i->get('settings/enabled')===false || $i->get('settings/disabled')===true){
+      /**
+       * 
+       */
+      if($i->is_set('settings/enabled')){
+        $i->set("settings/enabled", wfSettings::getSettingsFromYmlString($i->get('settings/enabled')));
+      }
+      if($i->is_set('settings/disabled')){
+        $i->set("settings/disabled", wfSettings::getSettingsFromYmlString($i->get('settings/disabled')));
+      }
+      /**
+       * 
+       */
+      if($i->is_set('settings/enabled') && !$i->get('settings/enabled')){
+        $data->setUnset("data/item/$k");
+      }
+      if($i->is_set('settings/disabled') && $i->get('settings/disabled')){
         $data->setUnset("data/item/$k");
       }
     }
