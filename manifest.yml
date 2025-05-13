@@ -1,5 +1,9 @@
-version: 1.5.2
+version: 1.5.3
 history:
+  1.5.3:
+    date: '2025-05-13'
+    title: Enabled/Disabled
+    description: 'Add support for enabled/disabled. Readme improvements.'
   1.5.2:
     date: '2023-09-27'
     title: Versions

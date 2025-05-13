@@ -22,6 +22,19 @@ class PluginBootstrapCarousel_v1{
     if(!is_array($data->get('data/item'))){
       $data->set('data/item', array(wfDocument::createHtmlElement('p', 'Element one'), wfDocument::createHtmlElement('p', 'Element two')));
     }
+    /**
+     * enabled / disabled
+     * Remove item.
+     */
+    foreach($data->get('data/item') as $k => $v){
+      $i = new PluginWfArray($v);
+      if($i->get('settings/enabled')===false || $i->get('settings/disabled')===true){
+        $data->setUnset("data/item/$k");
+      }
+    }
+    /**
+     * 
+     */
     foreach ($data->get('data/item') as $key => $value) {
       $carousel_item->set('innerHTML', array($value));
       $items[] = $carousel_item->get();
